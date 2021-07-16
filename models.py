@@ -8,3 +8,9 @@ class SchoolInfo(BaseModel):
     id: int
     address: str
     classes: List[int]
+
+
+class PeriodData(BaseModel):
+    subject: str
+    teacher: str
+    changed: bool = False
